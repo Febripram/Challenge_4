@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Binar Rental Car</title>
+</head>
+
+<body>
+
+  <header class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid col-md-10">
+        <a class="navbar-brand fs-4 fw-bold" href="index.html">Rentalin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-bold">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link register" href="index.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="home container-fluid">
+    <div class="row row-cols-1 offset-md-1 row-cols-md-2">
+      <div class="col col-md-5 align-self-center">
+        <h1 class="fw-bold">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+        <h6 class="fw-semibold">Selamat Datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan
+          harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</h6>
+        <br>
+      </div>
+      <div class="col col-md-7">
+        <img class="car-img w-100" src="https://i.ibb.co/rmRdnpN/img-car.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="search" class="container-fluid col-11 col-md-9">
+    <form class="w-100" id="search-form">
+      <div class="row p-3 shadow rounded search-form-div">
+        <div class="search-input form-group">
+          <label for="input-tipe-driver" class="form-label">Tipe Driver</label>
+          <select type="form-select" class="form-select" id="input-tipe-driver" name="driver">
+            <option value="" hidden selected>Pilih Tipe Driver</option>
+            <option value="1">Dengan Sopir</option>
+            <option value="0">Tanpa Sopir (Lepas Kunci)</option>
+          </select>
+        </div>
+        <div class="search-input form-group">
+          <label for="input-tanggal" class="form-label">Tanggal</label>
+          <input type="date" class="form-control" id="input-tanggal" name="tanggal" placeholder="Pilih Tanggal">
+        </div>
+        <div class="search-input form-group">
+          <label for="input-waktu" class="form-label">Waktu Jemput/Ambil</label>
+          <select type="form-select" class="form-select" id="input-waktu" name="waktu">
+            <option value="" hidden selected>Pilih Waktu</option>
+            <option value="08">08.00 WIB</option>
+            <option value="09">09.00 WIB</option>
+            <option value="10">10.00 WIB</option>
+            <option value="11">11.00 WIB</option>
+            <option value="12">12.00 WIB</option>
+          </select>
+        </div>
+        <div class="search-input form-group">
+          <label for="input-penumpang" class="form-label">Jumlah Penumpang (optional)</label>
+          <input type="number" class="form-control" id="input-penumpang" name="penumpang" placeholder="Jumlah Penumpang"
+            onkeypress="return event.charCode >= 48" min="1">
+        </div>
+        <div class="search-submit">
+          <button type="submit" id="search-btn" class="btn btn-success" >Cari Mobil</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section id="search-result" class="container-fluid col-11 col-md-9">
+    <div id="search-result-div" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+    </div>
+  </section>
+
+  <section class="footer container flex-column flex-lg-row">
+    <div class="addres col-4">
+      <h3>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</h3>
+      <h3>binarcarrental@gmail.com</h3>
+      <h3>081-233-334-808</h3>
+    </div>
+    <div class="homepage col-2">
+      <h3>Our services</h3>
+      <h3>Why Us</h3>
+      <h3>Testimonial</h3>
+      <h3>FAQ</h3>
+    </div>
+    <div class="media col-4">
+      <h3>Connect with us</h3>
+      <div class="media-sosial ">
+        <img src="https://i.ibb.co/Hq2C9LD/icon-facebook-1.png" alt="icon-facebook" border="0">
+        <img src="https://i.ibb.co/1YNShph/icon-instagram.png" alt="icon-instagram" border="0">
+        <img src="https://i.ibb.co/RHs7vZ2/icon-mail-1.png" alt="icon-main" border="0">
+        <img src="https://i.ibb.co/kGnhk6m/icon-twitter-1.png" alt="icon-twitter" border="0">
+        <img src="https://i.ibb.co/jz5WND5/icon-twitch.png" alt="icon-twitch" border="0">
+      </div>
+    </div>
+    <div>
+      <h5 class="copyright mt-3 mt-lg-0">Copyright Binar 2022</h5>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./scripts/app.example.js"></script>
+  <script type="text/javascript" src="./scripts/car.example.js"></script>
+  <script type="text/javascript" src="./scripts/binar.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
